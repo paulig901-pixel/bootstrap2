@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT</title>
+    <link rel="stylesheet" href="chatgpt.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Barra de Navegación-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Todo sobre las IAs</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                    </li>
+                    <!--Menu desplegable IAs-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            IAs
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="chatgpt.html">ChatGPT</a></li>
+                            <li><a class="dropdown-item" href="midjourney.html">Midjourney y Dall-e</a></li>
+                            <li><a class="dropdown-item" href="cursor_ia.html">Cursor AI</a></li>
+                        </ul>
+                    </li>
+                    <!--Menu desplegable Alumno-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Alumno
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>   Paulina González</li>
+                            <li>   4to "A"</li>
+                            <li>   E.E.T.P. N° 468</li>
+                            <li>   Prof. Jackeline</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+        <!-- Header -->
+        <header class="bg-primary text-black text-center py-5">
+            <div class="banner">
+                <h1>ChatGPT: La inteligencia artifiacial de OpenAI</h1>
+            </div>
+        </header>
+        
+            <!-- Sección de presentación -->
+            <div class="container text-center my-5">
+                <h1 class="display-4 fw-bold">Todo sobre ChatGPT</h1>
+                <p class="lead">ChatGPT es un chatbot de inteligencia artificial generativa desarrollado por OpenAI. Utiliza un modelo de lenguaje avanzado para interactuar con los usuarios de manera conversacional, respondiendo a preguntas, redactando textos y generando contenido de forma similar a como lo haría un ser humano.</p>
+                <span class="badge bg-primary">Inteligencia Artificial</span>
+                <span class="badge bg-success">Procesamiento de Lenguaje</span>
+                <span class="badge bg-info">OpenAI</span>
+            </div>
+
+            <!-- Sección con 3 columnas -->
+            <div class="container my-5">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" class="img-fluid mb-3" alt="IA">
+                        <h3>¿Qué es?</h3>
+                        <p>Actúa como un asistente de inteligencia artificial que comprende y genera texto humano para responder preguntas, redactar, resumir o explicar conceptos de forma conversacional.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" class="img-fluid mb-3" alt="Aplicaciones">
+                        <h3>Aplicaciones</h3>
+                        <p> Sus usos se extienden a la atención al cliente con chatbots, asistencia a desarrolladores de software para generar código, apoyo en la creación de contenido, ayuda en educación como tutor y mejora de la productividad personal.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712104.png" class="img-fluid mb-3" alt="Futuro">
+                        <h3>Futuro</h3>
+                        <p>Evoluciona para convertirse en un agente de IA más autónomo e integrado, con modelos de lenguaje más potentes, y se espera que transforme la colaboración entre humanos y máquinas, aunque plantea desafíos económicos y éticos. </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carrusel de imágenes -->
+            <div id="carouselExample" class="carousel slide container mb-5">
+                <div class="carousel-inner rounded shadow">
+                    <div class="carousel-item active">
+                        <img src="Imagenes/chatgpt3.webp" class="d-block w-100" alt="ChatGPT Imagen 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagenes/chatgpt7.jpg" class="d-block w-100" alt="ChatGPT Imagen 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagenes/chatgpt4.jpg" class="d-block w-100" alt="ChatGPT Imagen 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+            <!-- Cards con información -->
+            <div class="container my-5">
+                <h2 class="text-center mb-4">Características principales</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h5 class="card-title">Interacción natural</h5>
+                                <p class="card-text">ChatGPT puede mantener conversaciones fluidas y coherentes, adaptándose al estilo del usuario y comprendiendo el contexto para dar respuestas pertinentes y personalizadas. Las versiones recientes también permiten la interacción por voz e imagen, haciendo la comunicación más intuitiva.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h5 class="card-title">Aprendizaje continuo</h5>
+                                <p class="card-text">El modelo ha sido entrenado con un vasto conjunto de datos de texto y código de internet. Su capacidad para mejorar se debe, en parte, a la retroalimentación de entrenadores humanos (RLHF), lo que permite que el modelo refine sus respuestas para ser más útiles y seguras. Aunque el aprendizaje en tiempo real es limitado, las interacciones se analizan para futuras mejoras. </p>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h5 class="card-title">Multifuncional</h5>
+                                <p class="card-text">Gracias a su versatilidad, ChatGPT puede funcionar como asistente, traductor, programador y tutor. Puede resumir textos largos, generar contenido creativo como historias o poemas, y se integra en otras aplicaciones para automatizar tareas empresariales. </p>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Acordeón -->
+            <div class="container my-5">
+                <h2 class="text-center mb-4">Preguntas frecuentes</h2>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                ¿ChatGPT reemplaza a los humanos?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show">
+                            <div class="accordion-body">No, es una herramienta de apoyo. Facilita tareas, pero no sustituye la creatividad ni el criterio humano.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                ¿Es gratis usar ChatGPT?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse">
+                            <div class="accordion-body">Existe una versión gratuita con GPT-3.5 y una versión de pago llamada ChatGPT Plus con acceso a GPT-4.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabla -->
+            <div class="container my-5">
+                <h2 class="text-center mb-4">Comparación de versiones</h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                        <colgroup>
+                    <col style="width: 100px;"> 
+                    <col style="width: 100px;"> 
+                    <col>  
+                    <col>  
+                    <col>  
+                    <col>                                         
+                </colgroup>
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Versión</th>
+                                <th>Modelo</th>
+                                <th>Velocidad</th>
+                                <th>Precisión</th>
+                                <th>Limites</th>
+                                <th>Herramientas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Gratis</td>
+                                <td>GPT-3.5</td>
+                                <td>Más lenta, especialmente en horas pico, y con riesgo de fallar cuando la demanda es alta.</td>
+                                <td>Muy buena con GPT-4o, pero la precisión disminuye al cambiar a un modelo más limitado.</td>
+                                <td>Tope de mensajes para GPT-4o (o GPT-5 cuando esté disponible) y cantidad diaria de imágenes, aunque sin un contador visible.</td>
+                                <td> Funcionalidades limitadas de análisis de datos y generación de imágenes. </td>
+                            </tr>
+                            <tr>
+                                <td>Plus</td>
+                                <td>GPT-4</td>
+                                <td>Más rápida y consistente, con prioridad de acceso incluso en horas pico.</td>
+                                <td>Mayor precisión en tareas complejas gracias al acceso continuo a los modelos más potentes y experimentales.</td>
+                                <td>Más mensajes por hora y límites más altos de uso, lo que evita interrupciones en el trabajo.</td>
+                                <td>Funciones de análisis de datos más completas, mayor capacidad de generación de imágenes con DALL-E 3, y acceso prioritario a funciones beta como el modo de voz avanzado y la generación de video con Sora. </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Alert -->
+            <div class="container mb-5">
+                <div class="alert alert-warning text-center" role="alert">
+                    Atención: ChatGPT no es infalible, puede generar respuestas incorrectas o inventadas. Siempre verifica la información importante.
+                </div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        </body>
+    </html>

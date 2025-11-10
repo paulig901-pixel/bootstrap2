@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cursor AI - IAs de Código</title>
+    <link rel="stylesheet" href="cursor_ia.css">
+    <link rel="stylesheet" href="codigo.css" />
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
+
+</head>
+<body>
+    <!--Barra de Navegación-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Todo sobre las IAs</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                    </li>
+                    <!--Menu desplegable IAs-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            IAs
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="chatgpt.html">ChatGPT</a></li>
+                            <li><a class="dropdown-item" href="midjourney.html">Midjourney y Dall-e</a></li>
+                            <li><a class="dropdown-item" href="cursor_ia.html">Cursor AI</a></li>
+                        </ul>
+                    </li>
+                    <!--Menu desplegable Alumno-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Alumno
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>   Paulina González</li>
+                            <li>   4to "A"</li>
+                            <li>   E.E.T.P. N° 468</li>
+                            <li>   Prof. Jackeline</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Header -->
+    <header class="bg-primary text-black text-center py-5">
+        <div class="banner">
+            <h1>Tu copiloto de codigo inteligente</h1>
+        </div>
+    </header>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container my-5">
+        <!-- Introducción -->
+        <section class="row">
+            <div class="col-md-12">
+                <h2>Introducción</h2>
+                <p>
+                    <strong>Cursor AI</strong> es una familia de herramientas que asisten a desarrolladores al escribir código:
+                    autocompletados contextuales, sugerencias de funciones, búsqueda y explicación de código dentro del editor,
+                    e integración con repositorios para entender el proyecto completo.
+                </p>
+                <p>
+                    Estas IAs para código combinan modelos de lenguaje con información extra (AST, análisis estático, histórico de commits)
+                    para ofrecer sugerencias más relevantes que el autocompletado tradicional.
+                </p>
+            </div>
+        </section>
+
+        <!-- Definiciones en columnas -->
+        <section class="row my-4">
+            <div class="col-md-6">
+                <h3>¿Qué puede hacer Cursor?</h3>
+                <img src="Imagenes/cia.png" alt="Cursor demo" class="img-fluid mb-3" />
+                <ul>
+                    <li>Autocompletar funciones y líneas enteras basadas en el contexto del archivo y del proyecto.</li>
+                    <li>Buscar y navegar entre definiciones, usos y documentación interna.</li>
+                    <li>Generar tests unitarios, refactorizaciones sugeridas y snippets reutilizables.</li>
+                    <li>Explicar bloques de código en lenguaje natural para facilitar el entendimiento.</li>
+                </ul>
+                <div class="imgcentr">
+                    <img src="Imagenes/cia2.png" class="img-fluid" alt="Snippet example" />
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <h3>¿Cómo se integra?</h3>
+                <p>
+                    Cursor suele integrarse como extensión del editor (VS Code, JetBrains, etc.) o como app web que indexa tu repositorio
+                    (local o remoto) para entregar sugerencias con contexto de TODO el proyecto, no sólo del archivo abierto.
+                </p>
+                <p>
+                    Algunas capacidades requieren acceso a los archivos del proyecto y, en ambientes empresariales, se configuran con políticas
+                    de privacidad y control para evitar fugas de código sensible.
+                </p>
+                <div class="imgcentr">
+                    <img src="Imagenes/cia3.jpg" class="img-fluid" alt="Integración" />
+                </div>
+            </div>
+        </section>
+
+        <!-- CARRUSEL -->
+        <div id="carouselIA" class="carousel slide container mb-5" data-bs-ride="carousel">
+            <div class="carousel-inner rounded shadow">
+                <div class="carousel-item active">
+                    <img src="Imagenes/cia4.jpg" class="d-block w-100" alt="IA Imagen 1">
+                    <div class="carousel-caption d-none d-md-block bg-body-tertiary bg-opacity-50 rounded">
+                        <h5>Visión por Computadora</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Imagenes/cia4.webp" class="d-block w-100" alt="IA Imagen 2">
+                    <div class="carousel-caption d-none d-md-block bg-body-tertiary bg-opacity-50 rounded">
+                        <h5>Procesamiento del Lenguaje Natural</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Imagenes/cia11.webp" class="d-block w-100" alt="IA Imagen 3">
+                    <div class="carousel-caption d-none d-md-block bg-body-tertiary bg-opacity-50 rounded">
+                        <h5>Robótica Inteligente</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIA" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselIA" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <!-- 3 TARJETAS -->
+        <div class="container mb-5">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <img src="Imagenes/cia7.jpg" class="card-img-top" alt="IA Aplicaciones">
+                        <div class="card-body">
+                            <h5 class="card-title">Comprende proyectos completos:</h5>
+                            <p class="card-text">En lugar de analizar archivos aislados, la IA de Cursor entiende la totalidad de tu proyecto. Esto le permite generar sugerencias y corregir errores con un contexto mucho más profundo y preciso.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <img src="Imagenes/cia8.webp" class="card-img-top" alt="IA Tipos">
+                        <div class="card-body">
+                            <h5 class="card-title">Edita con lenguaje natural:</h5>
+                            <p class="card-text"> Puedes interactuar con la IA de Cursor mediante un chat, pidiéndole que genere nuevas funciones, optimice código o arregle fallos usando comandos en lenguaje sencillo y claro.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <img src="Imagenes/cia9.webp" class="card-img-top" alt="IA Futuro">
+                        <div class="card-body">
+                            <h5 class="card-title">Usa múltiples modelos de IA:</h5>
+                            <p class="card-text">No se limita a un solo modelo, sino que permite elegir entre varios proveedores como OpenAI, Google o Anthropic. Esto ofrece más flexibilidad para seleccionar el modelo que mejor se adapte a las necesidades del proyecto.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COLLAPSE -->
+        <div class="container mb-5">
+            <h4>Conclusión Final</h4>
+            <p>
+                <a class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseIA" role="button" aria-expanded="false" aria-controls="collapseIA">
+                    Mostrar / Ocultar detalles
+                </a>
+            </p>
+            <div class="collapse" id="collapseIA">
+                <div class="card card-body">
+                    <p>Cursor te ofrece la combinación perfecta de potencia, facilidad de uso y un precio competitivo para la programación asistida por IA. Su excelente comprensión del código y su precio justo, sumados a todas sus funciones, lo convierten en la opción ideal para cualquier desarrollador. Tanto si trabajas en proyectos pequeños como grandes, Cursor AI te ayuda a programar mejor y más rápido.</p>
+                    <p>Elegir una herramienta de programación es una decisión personal, pero Cursor IDE ofrece la mejor combinación de funciones, precio y comprensión del código para desarrolladores que buscan asistencia de IA. A medida que las herramientas de IA mejoran, Cursor AI se mantiene a la vanguardia gracias a su sólida base y sus constantes mejoras, por lo que es mi primera opción para el desarrollo con ayuda de IA.</p>
+                </div>
+            </div>
+        </div>
+
+     
+</body>
+</html>

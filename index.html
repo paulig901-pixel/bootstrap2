@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="indexcss.css">
+</head>
+<body>
+    <!--Barra de Navegación-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Todo sobre las IAs</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                    </li>
+                    <!--Menu desplegable IAs-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            IAs
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="chatgpt.html">ChatGPT</a></li>
+                            <li><a class="dropdown-item" href="midjourney.html">Midjourney y Dall-e</a></li>
+                            <li><a class="dropdown-item" href="cursor_ia.html">Cursor AI</a></li>
+                        </ul>
+                    </li>
+                    <!--Menu desplegable Alumno-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Alumno
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>   Paulina González</li>
+                            <li>   4to "A"</li>
+                            <li>   E.E.T.P. N° 468</li>
+                            <li>   Prof. Jackeline</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Header -->
+    <header class="bg-primary text-black text-center py-5">
+        <div class="banner">
+            <h1>Inteligencia Artificial: El Futuro en tus Manos</h1>
+        </div>
+    </header>
+    <!-- Carrusel -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Imagenes/dalle1.png" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>IAs para generar imagenes</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Imagenes/chatgpt1.jpeg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>IAs para generar texto</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Imagenes/cia10.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>IAs que generan código</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- 3 Cards -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Tipos de IAs Populares</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">IA de Texto</h5>
+                        <p class="card-text">Crea contenido nuevo y coherente en lenguaje natural, a partir de una instrucción o un conjunto de datos iniciales. 
+                            Esta capacidad, conocida como generación de texto con IA, se basa en el aprendizaje automático y, en particular, en los Modelos de 
+                            Lenguaje Grandes (LLM, por sus siglas en inglés) y el Procesamiento de Lenguaje Natural (PLN).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">IA de Imágenes</h5>
+                        <p class="card-text">(Text-to-Image): Esta es la función más común y popular. El usuario describe con palabras la imagen que desea, y la 
+                            IA la interpreta y crea. Los modelos de IA son entrenados con enormes bases de datos de imágenes y sus descripciones, lo que les permite 
+                            entender los patrones, estilos y contextos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">IA de Código</h5>
+                        <p class="card-text"> son asistentes inteligentes que ayudan a los programadores a escribir, depurar y optimizar software. Al integrarse en el 
+                            entorno de desarrollo, generan código automáticamente, sugieren autocompletados y detectan errores, acelerando el proceso y permitiendo a 
+                            los desarrolladores centrarse en tareas más complejas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3 columnas de texto -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Áreas donde se aplica la IA</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Educación</h5>
+                <p>Espacio para escribir cómo la IA ayuda a personalizar la enseñanza y crear materiales dinámicos.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Salud</h5>
+                <p>Espacio para explicar cómo la IA apoya en diagnósticos, análisis de imágenes médicas y gestión hospitalaria.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Negocios</h5>
+                <p>Espacio para detallar cómo la IA predice tendencias, optimiza procesos y analiza datos masivos.</p>
+            </div>
+        </div>
+    </div>
+    <!--Carrousel-->
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Imagenes/index1.webp" class="d-block w-100" width="100%" height="50%" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="Imagenes/index2.webp" class="d-block w-100" width="100%" height="50%" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    <!-- Tabla -->
+    <div class="container my-5">
+        <h3 class="text-center mb-3">Comparación de IAs</h3>
+        <table class="table table-striped table-hover text-center align-middle">
+            <colgroup>
+                    <col style="width: 200px;"> 
+                    <col>                                         
+                </colgroup>
+            <thead class="table-dark">
+                <tr>
+                    <th>IA</th>
+                    <th>Función</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>ChatGPT</td><td>Es un modelo de lenguaje de IA. Su función es conversar y generar texto. Puedes pedirle que responda preguntas, escriba código, traduzca idiomas, resuma textos o genere ideas. Su fuerza radica en la comprensión y producción de lenguaje natural.</td></tr>
+                <tr><td>Midjourney</td><td>Es una IA generadora de imágenes. Su función es crear contenido visual nuevo a partir de descripciones textuales. Se especializa en la generación de imágenes artísticas, detalladas y de alta calidad.</td></tr>
+                <tr><td>Cursor AI</td><td>Es un editor de código potenciado por IA. Su función principal es asistir a los desarrolladores en la programación. A diferencia de ChatGPT, que puede escribir código en una conversación, Cursor se integra directamente en el entorno de desarrollo y ayuda a modificar, refactorizar y completar el código del proyecto en tiempo real.</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Accordion -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Preguntas Frecuentes</h2>
+        <div class="accordion" id="faqIA">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                        ¿La IA reemplazará a los humanos?
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqIA">
+                    <div class="accordion-body">La IA complementa el trabajo humano, pero no lo reemplaza totalmente.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                        ¿Es segura la IA?
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqIA">
+                    <div class="accordion-body">La seguridad depende de su uso responsable y regulaciones adecuadas.</div>
+                </div>
+            </div>
+        </div>
+        
+</body>
+</html>
+
